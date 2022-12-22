@@ -53,6 +53,13 @@ npm run dev:server
 
 And enter the local URL for `auto-loader-dev.js` in Checkout Settings, e.g `http://127.0.0.1:8080/auto-loader-dev.js`
 
+## Unit Tests
+To run unit tests for a specific package, e.g. `core` you can use the following command:
+
+```sh
+npx nx run core:test --watch
+```
+
 ## Release
 
 Everytime a PR is merged to the master branch, CircleCI will trigger a build automatically. However, it won't create a new Git release until it is approved by a person with write access to the repository. If you have write access, you can approve a release job by going to [CircleCI](https://circleci.com/gh/bigcommerce/workflows/checkout-js/tree/master) and look for the job you wish to approve. You can also navigate directly to the release job by clicking on the yellow dot next to the merged commit.
